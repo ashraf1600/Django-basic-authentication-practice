@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+
+{% block title %}Dashboard - Task Manager{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome, {{ user.username }}!</h1>
+    <p>Email: {{ user.email }}</p>
+    <p style="margin-top: 20px;">This is your dashboard. You can add task management features here.</p>
+    
+    <form method="post" action="{% url 'logout' %}" style="margin-top: 30px;">
+        {% csrf_token %}
+        <button type="submit" style="background: #dc3545;">Logout</button>
+    </form>
+</div>
+{% endblock %}
