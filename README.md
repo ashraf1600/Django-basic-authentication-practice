@@ -1,4 +1,4 @@
-﻿# Django-basic-authentication-practice
+﻿
 
  # Django Custom Authentication System
 
@@ -551,4 +551,5 @@ After understanding authentication, you can:
 ---
 
 This authentication system provides a solid foundation for building secure web applications with Django!
+
 
